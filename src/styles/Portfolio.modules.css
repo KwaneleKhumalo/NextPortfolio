@@ -1,0 +1,22 @@
+.melissa {
+  background-color: #a73108;
+}
+
+.melissa > img, .cavalry > img {
+  width: 80%;
+  margin: auto;
+  padding: 1rem;
+}
+
+.cavalry {
+background-color: #061230;
+}
+
+.fox-fit {
+  background-color: #01071c;
+}
+
+.homegrown {
+  background-color: #0c3b40;
+}
+

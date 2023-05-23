@@ -4,13 +4,15 @@ import { Row, Col } from "react-bootstrap"
 
 const customer = () => {
   const router = useRouter()
-  const data = router.query 
-  // console.log(data)
+  const data = router.query
   const headerText = `${data.projectName}`
   const subText = `${data.projectType}`
+  const headerImg = `url(${data.headerImg})`
+
   return (
     <>
-      <Header className="header" headerText={headerText} subText={subText} />
+      <div className="img-overlay"></div>
+      <Header className="project-header" headerText={headerText} subText={subText} headerImg={headerImg} />
     </>
   )
 }

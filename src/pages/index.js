@@ -1,8 +1,8 @@
 import { Row, Col, Button } from 'react-bootstrap'
 import Slide from "@/features/Home/Carousel"
-import foxLogo from '../assets/images/portfolio/FoxFit/fox_logo.png'
-import homeGrownLogo from '../assets/images/portfolio/HomeGrown/HomeGrown_Farming.png'
-import melissaMockup from '../assets/images/portfolio/Melissa/Melissa_Mockup.jpg'
+import foxLogo from '/public/images/portfolio/FoxFit/fox_logo.png'
+import homeGrownLogo from '/public/images/portfolio/HomeGrown/HomeGrown_Farming.png'
+import melissaMockup from "/public/images/portfolio/Melissa/Melissa_Mockup.jpg"
 import Header from '@/components/Header'
 import Head from 'next/head'
 

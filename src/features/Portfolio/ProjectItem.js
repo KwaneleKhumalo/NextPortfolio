@@ -11,7 +11,7 @@ const ProjectItem = ({ project }) => {
             pathname: `/portfolio/${id}/${projectName}`,
             query: project
           }}>
-          <Card.Img src={headerImg.src} />
+          <Card.Img src={headerImg} />
         </Link>
       </Card>
     </>

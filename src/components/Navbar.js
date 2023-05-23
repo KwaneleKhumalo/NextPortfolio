@@ -12,7 +12,7 @@ const NavMenu = () => {
   const handleShow = () => setShow(true)
 
   return (
-    <>
+    <div className="nav-container">
       <Button variant="0" onClick={handleShow} className="me-2 col-3 col-md-1 bg-none justify-content-center d-flex p-3" style={{ height: "10%" }}>
         <MdOutlineMenu size="40" color="white" />
       </Button>
@@ -31,10 +31,10 @@ const NavMenu = () => {
               <Link className="text-light nav-item nav-link" href="/">
                 Home
               </Link>
-              <Link className="text-light nav-item nav-link" href="about">
+              <Link className="text-light nav-item nav-link" href="/about">
                 About
               </Link>
-              <Link className="text-light nav-item nav-link" href="pricing">
+              <Link className="text-light nav-item nav-link" href="/pricing">
                 Pricing
               </Link>
               <Link className="text-light nav-item nav-link" href="/portfolio">
@@ -44,7 +44,7 @@ const NavMenu = () => {
           </Container>
         </Offcanvas.Body>
       </Offcanvas>
-    </>
+    </div>
   )
 }
 

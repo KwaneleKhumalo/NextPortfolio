@@ -1,8 +1,3 @@
-import melissaMain from '../images/portfolio/Melissa/melissa.jpg'
-import foxfitMain from '../images/portfolio/FoxFit/Fox_Logo-04.png'
-import cavalry from "../images/portfolio/Cavalry/cav1.png"
-import cavalry2 from "../images/portfolio/HomeGrown/HomeGrown_Farming.png"
-
 export const Projects = [
   {
     id: 1,
@@ -10,7 +5,7 @@ export const Projects = [
     customerName: "melissa",
     projectType: "Brand Management",
     projectDescription: "",
-    headerImg: melissaMain,
+    headerImg: "/images/portfolio/Melissa/melissa.jpg",
     projectMedia: []
   },
 
@@ -20,7 +15,7 @@ export const Projects = [
     customerName: "cavalry",
     projectType: "Brand identity & Development",
     projectDescription: "",
-    headerImg: cavalry,
+    headerImg: "/images/portfolio/Cavalry/cav1.png",
     projectMedia: [{}]
   },
 
@@ -30,7 +25,7 @@ export const Projects = [
     customerName: "fox-fit",
     projectType: "Brand Identity & Development",
     projectDescription: "",
-    headerImg: foxfitMain,
+    headerImg: "/images/portfolio/FoxFit/Fox_Logo-04.png",
     projectMedia: [{}]
   },
 
@@ -40,7 +35,7 @@ export const Projects = [
     customerName: "homegrown",
     projectType: "Brand identity & Development",
     projectDescription: "",
-    headerImg: cavalry2,
+    headerImg: "/images/portfolio/HomeGrown/HomeGrown_Farming.png",
     projectMedia: [{}]
   }
 ]

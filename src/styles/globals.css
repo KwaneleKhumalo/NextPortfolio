@@ -19,6 +19,26 @@ body {
   height: 70vh;
 }
 
+.project-header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  z-index: 1;
+  width: 100%;
+}
+
+
+.nav-container {
+  background-color: #000a18d6;
+  z-index: 10 !important;
+  position: absolute;
+  left: 0;
+  right: 0;
+  min-width: 100vw;
+  height: 70vh;
+}
+
 
 img {
   image-rendering: smooth;
@@ -39,7 +59,6 @@ background-color: #000a18;
 
 .nav-item {
   font-size: 1.5rem;
-  /* width: 100%; */
   text-align: center;
   margin: auto;
   position: relative;

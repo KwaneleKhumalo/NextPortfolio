@@ -42,6 +42,7 @@ body {
 img {
   image-rendering: smooth;
   image-resolution: from-image 300dpi;
+  object-fit: cover;
 }
 
 .team-card:nth-child(1) > img {

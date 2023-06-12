@@ -33,7 +33,7 @@ const customer = () => {
         ) : (
           project.projectMedia.map(media => (
             <Col md={12} lg={6} key={media.mediaId} className="mx-auto p-0">
-              <img src={media.img} alt={projectName} className="w-100 h-100 d-block" />
+              <img src={media.img} alt={projectName} className="w-100 h-100 d-block" style={{objectFit:"cover"}}/>
             </Col>
           ))
         )}

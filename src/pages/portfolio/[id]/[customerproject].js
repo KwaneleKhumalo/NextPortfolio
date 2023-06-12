@@ -13,6 +13,11 @@ const customer = () => {
   const subText = `${projectType}`
   const headerImage = `url(${headerImg})`
 
+  if (!project) {
+    // Handle case when project is not found
+    return <div>Project not found</div>
+  }
+
   const { projectMedia } = project
 
   return (

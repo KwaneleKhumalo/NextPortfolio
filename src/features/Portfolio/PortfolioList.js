@@ -5,9 +5,7 @@ import ProjectItem from "./ProjectItem"
 const PortfolioList = () => {
   return (
     <Row className="text-center">
-      {Projects.map(project => (
-        <ProjectItem project={project}/>
-      ))}
+      <ProjectItem project={Projects} />
     </Row>
   )
 }

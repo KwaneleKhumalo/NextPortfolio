@@ -4,7 +4,7 @@ import Header from "@/components/Header"
 
 const AboutPage = () => {
   const headerText = `About Us.`
-  const subText = `Originally, Digital Circle was formed as a logo design creative agency. Through expansion, we became a full scale Graphic Design and Web Service agency, providing scalable digital solutions for small to mid-size business. We are proudly brand managers! `
+  const subText = `Originally, Digital Circle was formed as a logo design creative agency. Through expansion, we became a full scale Graphic Design and Web Solutions Agency, providing scalable digital solutions for small to mid-size businesses. We are proudly Brand Managers! `
   return (
     <>
       <Header className="header" headerText={headerText} subText={subText} />

@@ -1,6 +1,5 @@
 import { Row, Col, Button } from 'react-bootstrap'
 import Slide from "@/features/Home/Carousel"
-import homeGrownLogo from '/public/images/portfolio/HomeGrown/HomeGrown_Farming.png'
 import Header from '@/components/Header'
 import Head from 'next/head'
 

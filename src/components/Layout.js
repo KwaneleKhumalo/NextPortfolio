@@ -1,7 +1,5 @@
-
 import Header from "./Header"
 import Footer from "./Footer"
-import SideNav from "./sideNav"
 
 const Layout = ({children}) => {
   return (

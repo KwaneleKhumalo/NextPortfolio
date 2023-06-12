@@ -13,24 +13,7 @@ const customer = () => {
   const subText = `${projectType}`
   const headerImage = `url(${headerImg})`
 
-  if (!project) {
-    // Handle case when project is not found
-    return <div>Project not found</div>
-  }
-
   const { projectMedia } = project
-
-  // if (projectMedia.length === 0) {
-  //   return (
-  //     <>
-  //       <Row>
-  //         <Col className="text-center">
-  //           <h3>Coming Soon</h3>
-  //         </Col>
-  //       </Row>
-  //     </>
-  //   )
-  // }
 
   return (
     <>

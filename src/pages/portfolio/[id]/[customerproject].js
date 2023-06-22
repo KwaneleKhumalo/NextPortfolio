@@ -5,7 +5,7 @@ import { Row, Col } from "react-bootstrap"
 
 const customer = () => {
   const router = useRouter()
-  const { id, projectName, projectType, headerImg } = router.query
+  const { id, projectName, projectType } = router.query
   const project = Projects.find(item => item.id === Number(id) && item.projectName === projectName)
 
   if (!project) {

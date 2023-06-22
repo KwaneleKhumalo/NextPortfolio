@@ -17,7 +17,7 @@ const NavMenu = () => {
         <MdOutlineMenu size="40" color="white" />
       </Button>
 
-      <Offcanvas show={show} onClick={handleClose} className="bg-dark text-light h-100" placement="start">
+      <Offcanvas show={show} onClick={handleClose} className="bg-dark text-light h-100" placement="top">
         <Offcanvas.Header>
           <VscChromeClose size={40} style={{cursor:"pointer"}}/>
         </Offcanvas.Header>

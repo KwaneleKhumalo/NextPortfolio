@@ -1,5 +1,6 @@
-html {
+html{
   overflow-x: hidden;
+  min-width: 100vw;
 }
 
 body {

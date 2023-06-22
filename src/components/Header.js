@@ -8,7 +8,7 @@ const Header = (props) => {
     <>
       <Row className={className} style={ { backgroundImage: `${headerImg}` }}>
         <Col md="12">
-          <NavMenu className="border" />
+          <NavMenu />
         </Col>
         <Col className="text-center h-25" style={{zIndex: 10}}>
           <h1 className="text-center text-light"> {headerText} </h1>

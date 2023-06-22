@@ -16,15 +16,7 @@ const customer = () => {
   const { projectMedia } = project
   const headerText = `${projectName}`
   const subText = `${projectType}`
-  const headerImage = `url(${projectMedia > 0 ? projectMedia[0].img : ""})`
-
-  if (!"img" || headerImage === undefined) {
-    return (
-      <Col className="text-center">
-        <h1>Coming Soon</h1>
-      </Col>
-    )
-  }
+  const headerImage = `url(${projectMedia > '0' ? projectMedia[0].img : ""})`
 
   return (
     <>

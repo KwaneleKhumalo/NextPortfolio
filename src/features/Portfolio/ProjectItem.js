@@ -1,6 +1,5 @@
-import { Nav, Card } from "react-bootstrap"
+import { Card } from "react-bootstrap"
 import Link from "next/link"
-import { useEffect } from "react";
 
 const ProjectItem = ({ project }) => {
   return (

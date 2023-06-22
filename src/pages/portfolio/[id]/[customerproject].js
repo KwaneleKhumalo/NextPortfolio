@@ -7,11 +7,6 @@ const customer = () => {
   const router = useRouter()
   const { id, projectName, projectType, headerImg } = router.query
   const project = Projects.find(item => item.id === Number(id) && item.projectName === projectName)
-  console.log()
-
-  const headerText = `${projectName}`
-  const subText = `${projectType}`
-  const headerImage = `url(${headerImg})`
 
   if (!project) {
     // Handle case when project is not found
@@ -19,6 +14,9 @@ const customer = () => {
   }
 
   const { projectMedia } = project
+  const headerText = `${projectName}`
+  const subText = `${projectType}`
+  const headerImage = `url(${projectMedia[0].img})`
 
   return (
     <>
@@ -33,7 +31,7 @@ const customer = () => {
         ) : (
           project.projectMedia.map(media => (
             <Col md={12} lg={6} key={media.mediaId} className="mx-auto p-0">
-              <img src={media.img} alt={projectName} className="w-100 h-100 d-block" style={{objectFit:"cover"}}/>
+              <img src={media.img} alt={projectName} className="w-100 h-100 d-block" style={{ objectFit: "cover" }} />
             </Col>
           ))
         )}

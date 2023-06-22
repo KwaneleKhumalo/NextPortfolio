@@ -41,8 +41,34 @@ export const Projects = [
     customerName: "cavalry",
     projectType: "Brand identity & Development",
     projectDescription: "",
-    headerImg: "/images/portfolio/Cavalry/cav1.png",
-    projectMedia: []
+    headerImg: "https://thumbnails-photos.amazon.com/v1/thumbnail/72Es936VSR2Jj-OpMynckw?viewBox=1012%2C1001&ownerId=A1YK1TL6G91V5W&groupShareToken=hJy9kjEZRw2G7_0v6QtKlQ.P96rw3ltfW_KG6mw6VgCDx",
+    projectMedia: [
+      {
+        mediaId: 1,
+        img: "https://thumbnails-photos.amazon.com/v1/thumbnail/9mYEtuZdQ2-GBQccZ_yIMw?viewBox=1001%2C1001&ownerId=A1YK1TL6G91V5W&groupShareToken=Vw5jYN2zQwG2oe-kLDQJ9w.xUacWzIy5yFLB03eVexkh8"
+      },
+      {
+        mediaId: 2,
+        img: "https://thumbnails-photos.amazon.com/v1/thumbnail/tq47gfRkQ_iGkPRpzmzp9Q?ownerId=A1YK1TL6G91V5W&viewBox=700&groupShareToken=r2nsEYGbQEy02ZGH81gEqA.v5iEAGEZFzlVuO64rgcvAV"
+      },
+
+      {
+        mediaId: 3,
+        img: "https://thumbnails-photos.amazon.com/v1/thumbnail/bF6LiQnHQ5ipmX0r67SEiA?viewBox=1001%2C1001&ownerId=A1YK1TL6G91V5W&groupShareToken=9_RqJqirRTWpF_v_z0n5kg.b_MuV2zRDhCMnQBBe6pDAt"
+      },
+      {
+        mediaId: 4,
+        img: "https://thumbnails-photos.amazon.com/v1/thumbnail/QzMV7SmdSF2gHk0-ggFfoA?viewBox=1001%2C1001&ownerId=A1YK1TL6G91V5W&groupShareToken=9QxFOGXBRVaQ1ppxl9f3nA.onhbC82xCnp5KZwvOAbh-4"
+      },
+      {
+        mediaId: 5,
+        img: "https://thumbnails-photos.amazon.com/v1/thumbnail/OHbthDmtRpK6TULujSFMlA?viewBox=819%2C1001&ownerId=A1YK1TL6G91V5W&groupShareToken=HiCVL6G6QNaO64ey3ys2BA.UrlxgGR7pW42cLKYUSI8I9"
+      },
+      {
+        mediaId: 6,
+        img: "https://thumbnails-photos.amazon.com/v1/thumbnail/72Es936VSR2Jj-OpMynckw?viewBox=1012%2C1001&ownerId=A1YK1TL6G91V5W&groupShareToken=hJy9kjEZRw2G7_0v6QtKlQ.P96rw3ltfW_KG6mw6VgCDx"
+      }
+    ]
   },
 
   {
@@ -85,6 +111,23 @@ export const Projects = [
       {
         mediaId: 8,
         img: "https://thumbnails-photos.amazon.com/v1/thumbnail/0cu_tRwrSZGBhowYzK5ynw?viewBox=1001%2C1001&ownerId=A1YK1TL6G91V5W&groupShareToken=ch05LpOTRoKjvfDRGlza-w.s5yunAsdBgTBIT_UKs-lor"
+      },
+
+      {
+        mediaId: 9,
+        img: "https://thumbnails-photos.amazon.com/v1/thumbnail/ohQvenrMRiC44mDxgkLPXQ?viewBox=1001%2C1001&ownerId=A1YK1TL6G91V5W&groupShareToken=W4_5mYKKQS29lJvq26PF5g.XnnjHiWBu6daTYnZRV6atj"
+      },
+      {
+        mediaId: 10,
+        img: "https://thumbnails-photos.amazon.com/v1/thumbnail/VhuTKB2-TdOuAIQwWPYjJg?ownerId=A1YK1TL6G91V5W&viewBox=700&groupShareToken=ekAmbMydSUu-hzu-zR5DpQ.zBGvPtdrRQ7ZRdNWxnM3zx"
+      },
+      {
+        mediaId: 11,
+        img: "https://thumbnails-photos.amazon.com/v1/thumbnail/ztvWKCn8S_6XfHrr7B2HnQ?viewBox=1001%2C1001&ownerId=A1YK1TL6G91V5W&groupShareToken=nnlh_eUcTWS296ff4YEXxw.ubQW-KV4MVyN5l0u0-u_dz"
+      },
+      {
+        mediaId: 12,
+        img: "https://thumbnails-photos.amazon.com/v1/thumbnail/emXjUrXfQPOhM2vijNyM5w?viewBox=1001%2C1001&ownerId=A1YK1TL6G91V5W&groupShareToken=CXjuorqxQg6UCOvPnPF_qQ.L0PYM4hFXEY9bDq9uVigkg"
       }
     ]
   },

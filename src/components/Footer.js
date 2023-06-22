@@ -30,7 +30,7 @@ const Footer = () => {
         </Form>
       </Col>
       <Col md={12} className="text-center text-light mt-5 d-flex justify-content-center">
-        <Nav.Link href="https://www.behance.net/" target="_blank">
+        <Nav.Link href="https://www.behance.net/KwaneleKhumalo" target="_blank">
           <FaBehanceSquare size={30} />
         </Nav.Link>
 

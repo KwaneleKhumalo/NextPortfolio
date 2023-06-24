@@ -3,10 +3,10 @@ import { Team } from "@/assets/shared/Team"
 
 const TeamList = props => {
   return (
-    <Row className="mx-auto shadow mb-5">
+    <Row className="mx-auto shadow mb-5 py-3">
       {Team.map(mate => (
         <Col sm={100} md={3} key={mate.id} className={`text-center mx-auto p-0 border-0 mt-5 py-3`} style={{ width: "35rem" }}>
-          {mate.id === 2 ? <img className="w-50 rounded-circle" src={mate.Media.src} style={{ objectFit: "cover", height: "45%" }} alt={mate.Name} /> : <img className="w-50 h-50 rounded-circle" src={mate.Media.src} style={{ objectFit: "fill" }} alt={mate.Name} />}
+          {mate.id === 2 ? <img className="w-50 rounded-circle shadow shadow-lg" src={mate.Media.src} style={{ objectFit: "cover", height: "45%" }} alt={mate.Name} /> : <img className="w-50 rounded-circle shadow shadow-lg" src={mate.Media.src} style={{ objectFit: "fill" }} alt={mate.Name} />}
           <Card.Header>
             <h5 className="mt-4">{mate.Name}</h5>
           </Card.Header>

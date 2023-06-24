@@ -18,19 +18,19 @@ export const Projects = [
 
       {
         mediaId: 3,
-        img: "https://thumbnails-photos.amazon.com/v1/thumbnail/yiAcLOPdQaqeDbACKOxZvw?viewBox=1500%2C1000&ownerId=A1YK1TL6G91V5W&groupShareToken=dgGyUpGQTti3fTbIhIBlUQ.N3piYOj3JNNeh5ACmDBgKf"
+        img: "https://thumbnails-photos.amazon.com/v1/thumbnail/uGgwuAI4RNaPfvvCF4SA0g?viewBox=1001%2C1001&ownerId=A1YK1TL6G91V5W&groupShareToken=MxwGwoobQeGKX1hafyviqw.0rp5vVRSnOPrVzZB2-xMQ2"
       },
       {
         mediaId: 4,
-        img: "https://thumbnails-photos.amazon.com/v1/thumbnail/2mhqtZXxR16WH00vZMXUOA?viewBox=1001%2C1001&ownerId=A1YK1TL6G91V5W&groupShareToken=SInWO8zYT96oeg0BLKSiCw.0OS7yrX2bMPE1lNDHPnzjL"
+        img: "https://thumbnails-photos.amazon.com/v1/thumbnail/yiAcLOPdQaqeDbACKOxZvw?viewBox=1500%2C1000&ownerId=A1YK1TL6G91V5W&groupShareToken=dgGyUpGQTti3fTbIhIBlUQ.N3piYOj3JNNeh5ACmDBgKf"
       },
       {
         mediaId: 5,
-        img: "https://thumbnails-photos.amazon.com/v1/thumbnail/OowlQ1oDSEGNeKtyalGqFA?viewBox=1001%2C1001&ownerId=A1YK1TL6G91V5W&groupShareToken=MdhJ0sjQT-C9EGBPZhmRpA.bYHb88iTp8ZPXApDRwP8CA"
+        img: "https://thumbnails-photos.amazon.com/v1/thumbnail/2mhqtZXxR16WH00vZMXUOA?viewBox=1001%2C1001&ownerId=A1YK1TL6G91V5W&groupShareToken=SInWO8zYT96oeg0BLKSiCw.0OS7yrX2bMPE1lNDHPnzjL"
       },
       {
         mediaId: 6,
-        img: "https://thumbnails-photos.amazon.com/v1/thumbnail/uGgwuAI4RNaPfvvCF4SA0g?viewBox=1001%2C1001&ownerId=A1YK1TL6G91V5W&groupShareToken=MxwGwoobQeGKX1hafyviqw.0rp5vVRSnOPrVzZB2-xMQ2"
+        img: "https://thumbnails-photos.amazon.com/v1/thumbnail/OowlQ1oDSEGNeKtyalGqFA?viewBox=1001%2C1001&ownerId=A1YK1TL6G91V5W&groupShareToken=MdhJ0sjQT-C9EGBPZhmRpA.bYHb88iTp8ZPXApDRwP8CA"
       }
     ]
   },

@@ -19,8 +19,8 @@ const AboutPage = () => {
       </Row>
 
       <Container>
-        <Row className="p-5 mx-auto">
-          <Col className="text-center mb-5" sm="12">
+        <Row className="mx-auto">
+          <Col className="text-center mb-5 mt-3" sm="12">
             <h1>Meet your Architects</h1>
           </Col>
           <TeamList />

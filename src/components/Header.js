@@ -12,7 +12,7 @@ const Header = (props) => {
         </Col>
         <Col className="text-center h-25" style={{zIndex: 10}}>
           <h1 className="text-center text-light"> {headerText} </h1>
-          <p className="text-center text-light col-md-4 mx-auto mt-4"> {subText} </p>
+          <p className="text-center text-light col-md-4 mx-auto mt-4" style={{fontSize: "20px"}}> {subText} </p>
         </Col>
       </Row>
     </>

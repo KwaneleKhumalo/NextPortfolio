@@ -11,10 +11,7 @@ const AboutPage = () => {
       <Row className="p-5 bg-light">
         <Col className="text-center">
           <h1 className="text-center">Let's Shake on it!</h1>
-          <p className="col col-md-8 col-lg-5 text-center mx-auto mt-3">Transform the way your business operates. The services offered are scalable, allowing you to reach more customers, maximize your brand visibility and help define and implement your brand's communication strategy.</p>
-          <Button variant="info" className="mx-auto text-light mt-3">
-            Book A Solution
-          </Button>
+          <p className="col col-md-8 col-lg-5 text-center mx-auto mt-3">Transform the way your business operates. We provide scalable services, affording more bandwidth to reach more customers, maximize your business visibility and help define and implement your brand's communication strategy.</p>
         </Col>
       </Row>
 

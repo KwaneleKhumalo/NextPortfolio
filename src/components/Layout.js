@@ -1,11 +1,13 @@
-import Header from "./Header"
 import Footer from "./Footer"
 
-const Layout = ({children}) => {
+const Layout = ({ children, scrollToFooter, scrollBtn }) => {
   return (
     <div>
+      {scrollBtn && <scrollBtn onClick={scrollToFooter}>Scroll to Footer</scrollBtn>}
+
       {children}
-      <Footer></Footer>
+
+      <Footer />
     </div>
   )
 }

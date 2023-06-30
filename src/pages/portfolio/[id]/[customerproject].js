@@ -1,22 +1,43 @@
 import Header from "@/components/Header"
 import { useRouter } from "next/router"
 import { Projects } from "@/assets/shared/Projects"
+import Loader from "@/components/Loader"
 import { Row, Col } from "react-bootstrap"
+import { useEffect, useState } from "react"
 
 const customer = () => {
   const router = useRouter()
   const { id, projectName, projectType } = router.query
-  const project = Projects.find(item => item.id === Number(id) && item.projectName === projectName)
 
-  if (!project) {
-    // Handle case when project is not found
-    return <div>Project not found</div>
+  const [images, setImages] = useState([])
+  const [isLoading, setIsLoading] = useState(true)
+
+  const getProjectData = async () => {
+    setIsLoading(true);
+    const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
+    await delay(3000)
+    const project = Projects.find(item => item.id === Number(id) && item.projectName === projectName)
+
+    if (!project) {
+      return <div>Project not found</div>
+    }
+
+    if (project.projectMedia) {
+      setImages(project.projectMedia)
+    }
+
+    setIsLoading(false)
   }
 
-  const { projectMedia } = project
+  useEffect(() => {
+    getProjectData()
+  })
+
+  const [img] = images
+
   const headerText = `${projectName}`
-  const subText = `${projectType}`
-  const headerImage = `url(${projectMedia > '0' ? projectMedia[0].img : ""})`
+  const subText = `${img ? projectType : ""}`
+  const headerImage = `url(${img ? img.img : ""})`
 
   return (
     <>
@@ -24,12 +45,10 @@ const customer = () => {
       <Header className="project-header" headerText={headerText} subText={subText} headerImg={headerImage} />
 
       <Row className="text-center">
-        {projectMedia.length === 0 ? (
-          <Col className="text-center">
-            <h3>Images Coming Soon</h3>
-          </Col>
+        {images.length === 0 ? (
+          <Loader />
         ) : (
-          project.projectMedia.map(media => (
+          images.map(media => (
             <Col md={12} lg={6} key={media.mediaId} className="mx-auto p-0">
               <img src={media.img} alt={projectName} className="w-100 h-100 d-block" style={{ objectFit: "cover" }} />
             </Col>

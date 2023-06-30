@@ -2,6 +2,7 @@ import { Card } from "react-bootstrap"
 import Link from "next/link"
 
 const ProjectItem = ({ project }) => {
+  
   return (
     <>
       {project.map(item => (

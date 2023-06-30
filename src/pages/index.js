@@ -22,10 +22,7 @@ const Home = () => {
       <Row className="p-5 bg-light">
         <Col className="text-center">
           <h1>Tired of cutting corners?</h1>
-          <p className="col-lg-4 col-md-8 col-12 mx-auto">We ensure that you are up-to-date on the latest trends and technologies and that your project are delivered successfully, timely and efficiently.</p>
-          <Button variant="info" className="text-light">
-            Book A Solution
-          </Button>
+          <p className="col-lg-4 col-md-8 col-12 mx-auto">Trust us to make sure that your business is up-to-date on the latest trends and technologies to beat your competition and allow your brand to pop! Your success is our priority.</p>
         </Col>
       </Row>
 

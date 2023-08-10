@@ -4,7 +4,7 @@ import { Row, Col } from "react-bootstrap"
 
 const Header = (props) => {
   
-  const { className, headerText, subText, headerImg } = props
+  const { className, headerText, subText, thirdText, headerImg } = props
   
   const styles = {
     backgroundImage: `${headerImg}`,
@@ -27,6 +27,9 @@ const Header = (props) => {
             <Col>
               <p className="text-center text-light col-md-4 mx-auto" style={{ fontSize: "20px" }}>
                 {subText}{" "}
+              </p>
+              <p className="text-center text-light col-md-4 mx-auto" style={{ fontSize: "20px" }}>
+                {thirdText}{" "}
               </p>
             </Col>
           </Row>

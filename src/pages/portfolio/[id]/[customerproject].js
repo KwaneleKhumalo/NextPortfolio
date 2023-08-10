@@ -41,7 +41,7 @@ const customer = () => {
 
   return (
     <>
-      <div className="img-overlay"></div>
+      <Col className="img-overlay w-100 position-absolute"></Col>
       <Header className="project-header" headerText={headerText} subText={subText} headerImg={headerImage} />
 
       <Row className="text-center">

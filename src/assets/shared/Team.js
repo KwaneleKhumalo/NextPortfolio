@@ -9,11 +9,11 @@ export const Team = [
     Description: "Griz Alumni, Software Engineer and your Brand Strategist, Kwanele takes pride in his creative abilities!",
     Media: Kwanele
   },
-  // {
-  //   id: 2,
-  //   Name: "Shandi Khumalo",
-  //   Position: "Illustrator & Character Designer",
-  //   Description: "Vector & book Illustrator & Character designer, Shandi instills a fun & creative perspective in your projects!",
-  //   Media: Shandi
-  // }
+  {
+    id: 2,
+    Name: "Shandi Khumalo",
+    Position: "Illustrator & Character Designer",
+    Description: "Vector & book Illustrator & Character designer, Shandi instills a fun & creative perspective in your projects!",
+    Media: Shandi
+  }
 ]

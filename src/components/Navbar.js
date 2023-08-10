@@ -19,7 +19,7 @@ const NavMenu = () => {
 
       <Offcanvas show={show} onClick={handleClose} className="bg-dark text-light h-100" placement="top">
         <Offcanvas.Header>
-          <VscChromeClose size={40} style={{cursor:"pointer"}}/>
+          <VscChromeClose className="ms-5 mt-3 text-info" size={30} style={{cursor:"pointer"}}/>
         </Offcanvas.Header>
 
         <Offcanvas.Body>

@@ -1,4 +1,4 @@
-import { Row, Col, Button, Card, Container } from "react-bootstrap"
+import { Row, Col, Container } from "react-bootstrap"
 import TeamList from "@/features/About/TeamList"
 import Header from "@/components/Header"
 

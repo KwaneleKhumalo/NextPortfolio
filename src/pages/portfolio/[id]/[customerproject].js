@@ -31,7 +31,7 @@ const customer = () => {
 
   useEffect(() => {
     getProjectData()
-  })
+  },[])
 
   const [img] = images
 

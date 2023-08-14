@@ -23,12 +23,7 @@ const PortfolioList = () => {
     getProjectData()
   }, [])
 
-  return (
-    <Row className="text-center">
-      { isLoading ? <Loader /> : ""}
-      <ProjectItem project={data} />
-    </Row>
-  )
+  return <Row className="text-center">{isLoading ? <Loader /> : <ProjectItem project={data} />}</Row>
 }
 
 export default PortfolioList

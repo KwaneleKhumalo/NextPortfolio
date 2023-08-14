@@ -2,8 +2,7 @@ import { Card, Nav, Row, Col } from "react-bootstrap"
 import { Team } from "@/assets/shared/Team"
 import Link from "next/link";
 
-const TeamList = props => {
-  // console.log(props);
+const TeamList = () => {
   return (
     <Row className="mx-auto shadow mb-5 py-3">
       {Team.map(mate => (

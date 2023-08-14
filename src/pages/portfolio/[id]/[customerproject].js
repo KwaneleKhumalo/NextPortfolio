@@ -31,7 +31,7 @@ const customer = () => {
 
   useEffect(() => {
     getProjectData()
-  },[])
+  },[router])
 
   const [img] = images
 
@@ -41,12 +41,18 @@ const customer = () => {
 
   return (
     <>
-      <Col className="img-overlay w-100 position-absolute"></Col>
-      <Header className="project-header" headerText={headerText} subText={subText} headerImg={headerImage} />
+      {isLoading ? (
+        <Loader />
+      ) : (
+        <>
+          <Col className="img-overlay w-100 position-absolute"></Col>
+          <Header className="project-header" headerText={headerText} subText={subText} headerImg={headerImage} />
+        </>
+      )}
 
       <Row className="text-center">
         {images.length === 0 ? (
-          <Loader />
+          <p className="text-center">Please Wait...</p>
         ) : (
           images.map(media => (
             <Col md={12} lg={6} key={media.mediaId} className="mx-auto p-0">

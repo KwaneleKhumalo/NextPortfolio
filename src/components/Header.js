@@ -1,6 +1,6 @@
 import NavMenu from "./Navbar"
 import { Row, Col } from "react-bootstrap"
-// import SideNav from "./sideNav"
+import { motion } from "framer-motion"
 
 const Header = (props) => {
   
@@ -28,9 +28,7 @@ const Header = (props) => {
               <p className="text-center text-light col-md-4 mx-auto" style={{ fontSize: "20px" }}>
                 {subText}{" "}
               </p>
-              <p className="text-center text-light col-md-4 mx-auto" style={{ fontSize: "20px" }}>
-                {thirdText}{" "}
-              </p>
+
             </Col>
           </Row>
         </Col>

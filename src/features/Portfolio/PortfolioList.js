@@ -12,7 +12,7 @@ const PortfolioList = () => {
   const getProjectData = async () => {
     setIsLoading(true)
     const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
-    await delay(3000)
+    await delay(2000)
     const projectData = Projects
     setData(projectData)
 

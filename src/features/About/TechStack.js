@@ -6,7 +6,7 @@ const TechStack = ({ data, links, name }) => {
   
   return (
     <Row className="align-items-center mx-auto mt-5 ">
-      <Row className="text-center justify-content-center p-5 border-bottom border-info">
+      <Row className="text-center justify-content-center p-5 border-bottom border-info mx-auto">
         <Col md={12} className="text-center mb-5">
           <h2>
             High <span className="text-info">Quality</span> Tech <span className="text-info">Stack!</span>

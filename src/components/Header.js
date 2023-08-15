@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 
 const Header = (props) => {
   
-  const { className, headerText, subText, thirdText, headerImg } = props
+  const { className, headerText, subText, headerImg } = props
   
   const styles = {
     backgroundImage: `${headerImg}`,
@@ -13,25 +13,35 @@ const Header = (props) => {
     backgroundPosition: "center"
   }
 
+  const container = {
+    hidden: { x: 100 },
+    show: { x: 0, transition: { duration: 0.75, ease: "easeOut" } }
+  }
+
+  const title = {
+    hidden: { opacity: 0 },
+    show: {opacity: 1, transition: {duration: 2}}
+  }
+
+
   return (
     <>
       <Row className={className} style={styles}>
-        <Col md="12">
+        <Col md={12}>
           <NavMenu />
         </Col>
-        <Col sm={12} className="text-center" style={{ zIndex: 10 }}>
-          <Row>
+        <motion.div className="text-center col" style={{ zIndex: 10 }} variants={container} initial="hidden" animate="show">
+          <Row className="row">
             <Col sm={12}>
-              <h1 className="text-center text-light w-75 mx-auto"> {headerText} </h1>
+              <motion.h1 variants={title} initial="hidden" animate="show" className="text-center text-light px-5 mx-auto"> {headerText} </motion.h1>
             </Col>
-            <Col>
-              <p className="text-center text-light col-md-4 mx-auto" style={{ fontSize: "20px" }}>
+            <Col md={6} lg={12} className="mt-3 mx-auto">
+              <p  className="text-center text-light col-11 col-md-4 mx-auto" style={{ fontSize: "20px" }}>
                 {subText}{" "}
               </p>
-
             </Col>
           </Row>
-        </Col>
+        </motion.div>
       </Row>
     </>
   )

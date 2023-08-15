@@ -1,12 +1,14 @@
 import { Row, Col, Container } from "react-bootstrap"
 import TeamList from "@/features/About/TeamList"
 import Header from "@/components/Header"
+import { motion } from "framer-motion"
+import { pageAnimation } from "@/animation"
 
 const AboutPage = () => {
   const headerText = `About Us.`
   const subText = `Originally, Digital Circle was formed as a logo design creative agency. Through expansion, we became a full scale Graphic Design and Web Solutions Agency, providing scalable digital solutions for small to mid-size businesses. We are proudly Brand Managers! `
   return (
-    <>
+    <motion.div variants={pageAnimation} initial="hidden" animate="show">
       <Header className="header" headerText={headerText} subText={subText} />
       <Row className="p-5 bg-light">
         <Col className="text-center">
@@ -23,7 +25,7 @@ const AboutPage = () => {
           <TeamList />
         </Row>
       </Container>
-    </>
+    </motion.div>
   )
 }
 

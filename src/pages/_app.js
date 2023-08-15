@@ -4,12 +4,15 @@ import 'react-icons'
 import '@/styles/globals.css'
 import "../styles/Portfolio.modules.css"
 import "../styles/Home.module.css"
+import { AnimatePresence } from "framer-motion"
 
 
 export default function App({ Component, pageProps }) {
   return (
     <Layout>
-      <Component {...pageProps} />
+      <AnimatePresence>
+        <Component {...pageProps} />
+      </AnimatePresence>
     </Layout>
   )
 }

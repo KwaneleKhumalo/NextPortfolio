@@ -1,9 +1,9 @@
-import NavMenu from "@/components/Navbar"
 import { useRouter } from "next/router"
 import { Team } from "@/assets/shared/Team"
-import { Button, Col, Row } from "react-bootstrap"
 import { useEffect, useState } from "react"
 import TeamPage from "@/features/About/TeamPage"
+import { motion } from "framer-motion"
+import { pageAnimation } from "@/animation"
 
 const Index = () => {
   const router = useRouter()
@@ -30,7 +30,7 @@ const Index = () => {
     }
   }, [member])
 
-  return <>{member ? <TeamPage data={member} /> : "No member found."}</>
+  return <motion.div variants={pageAnimation} initial="hidden" animate="show" exit="exit">{member ? <TeamPage data={member} /> : "No member found."}</motion.div>
 }
 
 export default Index

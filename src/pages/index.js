@@ -1,15 +1,16 @@
-import { Row, Col, Button } from 'react-bootstrap'
+import { Row, Col, Button } from "react-bootstrap"
 import Slide from "@/features/Home/Carousel"
-import Header from '@/components/Header'
-import Head from 'next/head'
-
+import Header from "@/components/Header"
+import Head from "next/head"
+import { motion } from "framer-motion"
+import { pageAnimation } from "@/animation"
 
 const Home = () => {
-  const headerText = `Full Scale Web & Graphic Design Solutions.`;
+  const headerText = `Full Scale Web & Graphic Design Solutions.`
   const subText = `Maximize Your Visibility! Transform Your Brand.`
 
   return (
-    <>
+    <motion.div variants={pageAnimation} initial="hidden" animate="show" exit="exit">
       <Head>
         <title>Digital Circle | Transform Your Brand</title>
         <meta name="description" content="Digital Circle Website" />
@@ -43,9 +44,8 @@ const Home = () => {
       <Row className="mt-5">
         <Slide />
       </Row>
-    </>
+    </motion.div>
   )
 }
 
 export default Home
-

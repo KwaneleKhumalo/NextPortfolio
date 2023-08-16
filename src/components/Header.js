@@ -30,18 +30,18 @@ const Header = (props) => {
         <Col md={12}>
           <NavMenu />
         </Col>
-        <motion.div className="text-center col" style={{ zIndex: 10 }} variants={container} initial="hidden" animate="show">
+        <Col className="text-center" style={{ zIndex: 10 }} variants={container} initial="hidden" animate="show">
           <Row className="row">
             <Col sm={12}>
-              <motion.h1 variants={title} initial="hidden" animate="show" className="text-center text-light px-5 mx-auto"> {headerText} </motion.h1>
+              <h1 className="text-center text-light px-5 mx-auto animate__animated animate__fadeInUpBig animate__slower"> {headerText} </h1>
             </Col>
             <Col md={6} lg={12} className="mt-3 mx-auto">
-              <p  className="text-center text-light col-11 col-md-4 mx-auto" style={{ fontSize: "20px" }}>
+              <p className="text-center text-light col-11 col-md-4 mx-auto animate__animated animate__fadeInDown animate__delay-2s" style={{ fontSize: "20px" }}>
                 {subText}{" "}
               </p>
             </Col>
           </Row>
-        </motion.div>
+        </Col>
       </Row>
     </>
   )

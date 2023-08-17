@@ -7,12 +7,12 @@ import { motion } from "framer-motion"
 const ProjectItem = ({ project }) => {
   
   return (
-    <motion.div className="row">
+    <motion.div className="row p-0">
       {!project ? (
         <Loader />
       ) : (
         project.map(item => (
-          <motion.div key={item.id} className={`card col-lg-6 col-md-12 mx-auto ${item.customerName} border-0 mb-1 shadow`} style={{ borderRadius: "0" }}>
+          <motion.div key={item.id} className={`p-0 col-lg-6 border-0 col-md-12 mx-auto ${item.customerName} mb-1 shadow`} style={{ borderRadius: "0" }}>
             <Card.Img src={item.headerImg} />
             <Link
               className="btn btn-info mx-auto col-6 col-md-3 mb-3"

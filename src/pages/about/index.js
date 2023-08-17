@@ -6,27 +6,40 @@ import { pageAnimation } from "@/animation"
 
 const AboutPage = () => {
   const headerText = `About Us.`
-  const subText = `Originally, Digital Circle was formed as a logo design creative agency. Through expansion, we became a full scale Graphic Design and Web Solutions Agency, providing scalable digital solutions for small to mid-size businesses. We are proudly Brand Managers! `
+  const subText = `Founded in the Beautiful Bitterroot Valley as a logo design creative agency, Digital Circle later expanded to become a full scale Graphic Design and Web Solutions Agency, providing scalable digital solutions for small to mid-size businesses. We are proudly Brand Managers!`
   return (
-    <motion.div variants={pageAnimation} initial="hidden" animate="show">
-      <Header className="header" headerText={headerText} subText={subText} />
-      <Row className="p-5 bg-light">
-        <Col className="text-center">
-          <h1 className="text-center">Let's Shake on it!</h1>
-          <p className="col col-md-8 col-lg-5 text-center mx-auto mt-3">Transform the way your business operates. We provide scalable services, affording more bandwidth to reach more customers, maximize your business visibility and help define and implement your brand's communication strategy.</p>
-        </Col>
-      </Row>
-
-      <Container>
-        <Row className="mx-auto">
-          <Col className="text-center mb-5 mt-3" sm="12">
-            <h1>Meet your Architects</h1>
+    <>
+      <motion.div variants={pageAnimation} initial="hidden" animate="show">
+        <Header className="home-header" headerText={headerText} subText={subText} />
+        <Row className="p-5 bg-light">
+          <Col className="text-center">
+            <h1 style={styles.textDecor} className="mb-5">Meet your Architects</h1>
+            <p style={styles.text} className="col col-md-8 text-center mx-auto mt-3">
+              We are <span className="text-info">Brand Managers!</span> What this means is that we stand behind your brand, allowing you to run your operations with no concern of the look, feel and <span className="text-info">communication strategy</span> of your brand. Meet the faces behind your brand. We're looking forward to working with you!
+            </p>
           </Col>
-          <TeamList />
         </Row>
-      </Container>
-    </motion.div>
+
+        <Container>
+          <Row className="mx-auto">
+            <TeamList />
+          </Row>
+        </Container>
+      </motion.div>
+    </>
   )
 }
+
+const styles = {
+  textDecor: {
+    textDecorationLine: "underline",
+    textDecorationColor: "#5bc0de",
+    textUnderlineOffset: "10px"
+  },
+  text: {
+    fontSize: "1.5em"
+  }
+}
+
 
 export default AboutPage

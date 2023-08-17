@@ -4,9 +4,12 @@ import { Prices } from "@/assets/shared/Prices"
 
 const PriceList = () => {
   return (
-    <Row className="mx-auto text-center p-5">
-      <Col md="12" className="mb-5">
-        <h3 style={styles.textDecor}>Add Value to your Business</h3>
+    <Row className="mx-auto text-center mb-5">
+      <Col md="12" className="mb-5 bg-light text-center p-5 shadow">
+        <h1 className="text-center mb-5" style={styles.textDecor}>
+          Add Value to your Business
+        </h1>
+        <h5 className="col col-md-8 col-lg-5 text-center mx-auto mt-3">Let's help you transform the way your business operates. We provide scalable services, equipping you with more bandwidth to reach more customers, maximize your business visibility and help define and implement your brand's communication strategy. </h5>
       </Col>
       {Prices.map(price => (
         <Card key={price.id} className="mt-4 mx-auto col-md-3 text-center p-0 shadow shadow-lg border-0" style={{ width: "27rem" }}>

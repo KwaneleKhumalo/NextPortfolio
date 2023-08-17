@@ -35,7 +35,7 @@ const NavMenu = () => {
                 About
               </Link>
               <Link className="text-light nav-item nav-link" href="/pricing">
-                Pricing
+                Services
               </Link>
               <Link className="text-light nav-item nav-link" href="/portfolio">
                 Work

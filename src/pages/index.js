@@ -1,4 +1,4 @@
-import { Row, Col, Button } from "react-bootstrap"
+import { Row, Col } from "react-bootstrap"
 import Slide from "@/features/Home/Carousel"
 import Header from "@/components/Header"
 import Head from "next/head"
@@ -18,9 +18,9 @@ const Home = () => {
 
       <Header className="home-header" headerText={headerText} subText={subText} />
 
-      <Row className="p-5 bg-light">
+      <Row className="p-5 bg-light shadow">
         <Col className="text-center">
-          <h1>Tired of cutting corners?</h1>
+          <h1 className="mb-5">Tired of cutting corners?</h1>
           <p className="col-lg-4 col-md-8 col-12 mx-auto">Trust us to make sure that your business is up-to-date on the latest trends and technologies to beat your competition and allow your brand to pop! Your success is our priority.</p>
         </Col>
       </Row>

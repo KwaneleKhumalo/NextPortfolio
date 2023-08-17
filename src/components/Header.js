@@ -36,8 +36,8 @@ const Header = (props) => {
               <h1 className="text-center text-light px-5 mx-auto animate__animated animate__fadeInUpBig animate__slower"> {headerText} </h1>
             </Col>
             <Col md={6} lg={12} className="mt-3 mx-auto">
-              <p className="text-center text-light col-11 col-md-4 mx-auto animate__animated animate__fadeInDown animate__delay-2s" style={{ fontSize: "20px" }}>
-                {subText}{" "}
+              <p className="text-center text-light col-11 col-md-6  mx-auto animate__animated animate__fadeInDown animate__delay-2s" style={{ fontSize: "20px" }}>
+                {subText}
               </p>
             </Col>
           </Row>
